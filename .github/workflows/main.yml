@@ -1,0 +1,9 @@
+on:
+  workflow_call:
+
+jobs:
+  job-name:
+    environment: myenv
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ secrets.GH_TOKEN }}"
