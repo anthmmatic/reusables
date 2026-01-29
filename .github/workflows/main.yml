@@ -1,12 +1,12 @@
 on:
   workflow_call:
-    secrets:
-      GH_TOKEN:
-        required: true
 
 jobs:
   job-name:
-    environment: myenv
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ secrets.GH_TOKEN }}"
+      - run: echo 'done'
+  job-name-2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'done'
